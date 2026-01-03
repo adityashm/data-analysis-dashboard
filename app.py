@@ -1,6 +1,5 @@
 ﻿from flask import Flask, render_template, jsonify, request
 import plotly.graph_objects as go
-import plotly.express as px
 import json
 import sqlite3
 from datetime import datetime, timedelta
@@ -368,6 +367,8 @@ def not_found(error):
 def server_error(error):
     return jsonify({'error': 'Internal server error'}), 500
 
+# Ensure database exists when the app is imported by gunicorn/uvicorn
+init_db()
+
 if __name__ == '__main__':
-    init_db()
     app.run(debug=True, host='0.0.0.0', port=5000)
