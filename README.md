@@ -114,7 +114,7 @@ MIT License - feel free to use this project for your portfolio!
 
 Aditya Sharma
 - GitHub: https://github.com/adityashm
-- Portfolio: https://adityashm.me
+- Portfolio: https://adityashm.tech
 
 ## Live Demo
 
